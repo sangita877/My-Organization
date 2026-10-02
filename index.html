@@ -8,14 +8,45 @@
 </head>
 <body>
     <!-- Header  -->
-   <header class="header"><h1>My Organization</h1></header> 
+   <header class="site-header">
+    <div class="brand-mark">MO</div>
+     <div>
+        <h2>Community Connect</h2>
+         <p>Organization Portal</p>
+     </div>
+    <h1>Welcome<br> to My Organization</h1>
+    <hr>
+    <p class="header-subtitle"> Manage your people, explore groups, connect with leaders, and stay updated with community activities.</p>
+</header> 
 
+   <section class="control-panel">
+        <div class="panel-section">
+            <h3>1. Select a Group View</h3>
+            <div id="group-picker" class="picker-container"></div>
+        </div>
+        <div class="panel-section">
+            <h3>2. Select a Leader View</h3>
+            <div id="leader-picker" class="picker-container"></div>
+        </div>
+        <div class="panel-section">
+            <h3>3. Select a Person (History View)</h3>
+            <div id="person-picker" class="picker-container"></div>
+        </div>
+    </section>
 
-   <nav id="picker"></nav>
-   <main id="content"></main>
-   <div id="status"></div>
+    <div id="status" class="status-message">Loading dashboard data from Google Sheets...</div>
 
-    
-     <script src="App.js"></script>
+    <main id="content">
+        <div class="placeholder-text">Select an option from the panel above to view data.</div>
+    </main>
+    <footer> 
+         <div class="footer-content">
+        <h3>Organization Portal</h3>
+        <p>Connecting people, groups, and community activities.</p>
+        <p>&copy; 2026 Organization Portal | Capstone 1</p>
+    </div>
+</footer>
+
+     <script src="app.js"></script>
 </body>
 </html>
