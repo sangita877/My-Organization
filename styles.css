@@ -1,0 +1,213 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(66, 91, 154);
+    color: aliceblue;
+     padding: 25px 30px 45px;
+    border-radius: 16px;
+}
+
+.brand-mark{
+    display: inline-block;
+    background-color: #76C0EC;
+;
+    text-transform: capitalize;
+    padding: 12px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+h1{
+    text-align: center;
+    text-decoration: wavy;
+    
+    
+}
+.header-subtitle{
+    text-align: center;
+}
+
+.control-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #30497D;
+    border-bottom: 1px solid var(--border);
+}
+
+.panel-section {
+    background-color: rgb(255, 246, 220);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.panel-section h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: var(--secondary);
+    border-bottom: 2px solid var(--light-bg);
+    padding-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.picker-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+button {
+    background-color: #ffffff;
+    color: var(--secondary);
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+button:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+button.active {
+    background-color: var(--primary);
+    color: black;
+    border-color: var(--primary);
+}
+
+.status-message {
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    background-color: #2775b1;
+    color: white;
+    font-weight: 500;
+}
+
+.status-message.error {
+    background-color: #fde8e8;
+    color: var(--danger);
+}
+
+.status-message.hidden {
+    display: none;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.placeholder-text {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 3rem 0;
+}
+
+View Specific Styling
+.view-title {
+    color: var(--primary);
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.roster-section, .posts-section, .history-section {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+}
+
+.leader-box {
+    background-color: #fcf8e3;
+    border-left: 5px solid #f0ad4e;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.member-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.member-list li {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--light-bg);
+}
+
+.member-list li:last-child {
+    border-bottom: none;
+}
+
+.post-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--light-bg);
+    padding-bottom: 0.25rem;
+}
+
+.post-author {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.post-body {
+    white-space: pre-wrap;
+}
+
+.attachment-badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: var(--light-bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    border: 1px solid var(--border);
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #E1F6FF;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border);
+}
